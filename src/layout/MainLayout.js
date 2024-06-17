@@ -22,7 +22,7 @@ const MainLayout = () => {
   return (
     <>
       <CssBaseline />
-      <Container sx={{ minHeight: "100vh" }}>
+      <Container sx={{ minHeight: "90vh" }} maxWidth={false} disableGutters>
         <AppBar position="sticky">
           <Toolbar variant="myVariant">
             <Typography variant="h6" marginLeft={2}>
@@ -37,8 +37,8 @@ const MainLayout = () => {
           <DrawerList toggleDrawer={toggleDrawer} />
         </Drawer>
         <Outlet />
-        <Footer />
       </Container>
+        <Footer />
     </>
   );
 };

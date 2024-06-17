@@ -28,26 +28,26 @@ export default function BasicTabs() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="About Me" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Technical Capabilities" {...a11yProps(1)} />
+          <Tab label="Hobbies" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Grid container justifyContent='space-between'>
-            <Grid item sm={12} lg={5}>
-                <img src={sampleImage} />
+        <Grid container justifyContent='space-between' sx={{minHeight: '50vh'}}>
+            <Grid item sm={12} lg={4}>
+                <img src={sampleImage} alt='avatar'/>
             </Grid>
                 <Divider orientation="vertical" flexItem sx={{ ml: "-50px" }}/>
             <Grid item sm={12} lg={7}>
-                <Typography variant='h5'>about me</Typography>
+                <Typography variant='h5'>About Me</Typography>
             </Grid>
         </Grid>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        Technical Capabilities
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        Hobbies
       </CustomTabPanel>
     </Box>
   );
