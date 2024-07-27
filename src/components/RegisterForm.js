@@ -47,7 +47,7 @@ export default function RegisterForm() {
 
   return (
     <CacheProvider value={cacheRtl}>
-      <Container component="main" maxWidth="xs" sx={{backgroundImage:(!matches && `url(${cover})`), backgroundSize:'cover', backgroundPosition:'center', borderRadius:'9px'}}>
+      <Container component="main" maxWidth="xs" sx={{backgroundImage:(!matches && `url(${cover})`), backgroundSize:'cover',  borderRadius:'9px'}}>
         <CssBaseline />
         <Box
           sx={{
@@ -147,7 +147,13 @@ export default function RegisterForm() {
                 <LoadCanvasTemplateNoReload />
               </Grid>
             </Grid>
-            <Button
+            
+            
+          </Box>
+        </Box>
+        {/* <Copyright sx={{ mt: 5 }} /> */}
+      </Container>
+      <Button
               type="submit"
               fullWidth
               variant="contained"
@@ -156,11 +162,6 @@ export default function RegisterForm() {
             >
               ثبت
             </Button>
-            
-          </Box>
-        </Box>
-        {/* <Copyright sx={{ mt: 5 }} /> */}
-      </Container>
     </CacheProvider>
   );
 }
