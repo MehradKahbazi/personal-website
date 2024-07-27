@@ -139,7 +139,7 @@ export default function RegisterForm() {
                   fullWidth
                   name="nationalId"
                   label="متن داخل تصویر را وارد کنید"
-                  type="tel"
+                  type="text"
                   id="nationalId"
                 />
               </Grid>
@@ -151,6 +151,7 @@ export default function RegisterForm() {
               type="submit"
               fullWidth
               variant="contained"
+              color="success"
               sx={{ mt: 3, mb: 2 }}
             >
               ثبت
