@@ -8,6 +8,7 @@ import CourseImage from '../assets/IMG_20240724_175552_623.jpg';
 import RegisterForm from '../components/RegisterForm';
 
 
+
 function a11yProps(index) {
     return {
       id: `simple-tab-${index}`,
@@ -21,6 +22,8 @@ const RegisterPage = () =>{
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  
     return(
         <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -36,7 +39,7 @@ const RegisterPage = () =>{
                 <img src={CourseImage} alt='avatar' width='100%' height='100%' style={{borderRadius:'7px'}}/>
             </Grid>
                 <Divider orientation="vertical" flexItem sx={{ ml: "-50px" }}/>
-            <Grid item sm={12} lg={7}>
+            <Grid item sm={12} lg={7} >
                 <Typography variant='h5'>دوره Reactjs</Typography>
                 <RegisterForm />
             </Grid>

@@ -1,59 +1,78 @@
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import HowToRegOutlinedIcon from '@mui/icons-material/HowToRegOutlined'
-;import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { useLayoutEffect } from 'react';
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import HowToRegOutlinedIcon from "@mui/icons-material/HowToRegOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import {
+    loadCaptchaEnginge,
+    LoadCanvasTemplate,
+    LoadCanvasTemplateNoReload,
+    validateCaptcha,
+  } from "react-simple-captcha";
 
+import rtlPlugin from "stylis-plugin-rtl";
+import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
+import { useEffect } from "react";
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import cover from '../assets/bgi.jpg';
 
-import rtlPlugin from 'stylis-plugin-rtl';
-import { CacheProvider } from '@emotion/react';
-import createCache from '@emotion/cache';
 
 const cacheRtl = createCache({
-    key: 'muirtl',
-    stylisPlugins: [rtlPlugin],
-  });
+  key: "muirtl",
+  stylisPlugins: [rtlPlugin],
+});
 
 export default function RegisterForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get('email'),
-      password: data.get('password'),
+      email: data.get("email"),
+      password: data.get("password"),
     });
   };
-//   useLayoutEffect(() => {
-//     document.body.setAttribute('dir', "rtl");
-//   }, []);
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+  console.log(matches);
+  
+  useEffect(()=>{
+    loadCaptchaEnginge(6)
+  },[])
 
   return (
     <CacheProvider value={cacheRtl}>
-        <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" sx={{backgroundImage:(!matches && `url(${cover})`), backgroundSize:'cover', backgroundPosition:'center', borderRadius:'9px'}}>
         <CssBaseline />
         <Box
           sx={{
             marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <HowToRegOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            ثبت نام
+            ثبت نام اولیه
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+          <Box
+            component="form"
+            noValidate
+            onSubmit={handleSubmit}
+            sx={{ mt: 3 }}
+          >
+            <Grid container spacing={2} justifyContent='center' >
+              <Grid item xs={10} sm={6}>
                 <TextField
+                size="small"
                   autoComplete="given-name"
                   name="firstName"
                   required
@@ -63,8 +82,9 @@ export default function RegisterForm() {
                   autoFocus
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={10} sm={6}>
                 <TextField
+                size="small"
                   required
                   fullWidth
                   id="lastName"
@@ -73,8 +93,9 @@ export default function RegisterForm() {
                   autoComplete="family-name"
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={10}>
                 <TextField
+                size="small"
                   required
                   fullWidth
                   id="email"
@@ -83,8 +104,9 @@ export default function RegisterForm() {
                   autoComplete="email"
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={10}>
                 <TextField
+                size="small"
                   required
                   fullWidth
                   name="phone"
@@ -93,8 +115,9 @@ export default function RegisterForm() {
                   id="phone"
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={10}>
                 <TextField
+                size="small"
                   required
                   fullWidth
                   name="nationalId"
@@ -103,12 +126,26 @@ export default function RegisterForm() {
                   id="nationalId"
                 />
               </Grid>
-              {/* <Grid item xs={12}>
+              {/* <Grid item xs={10}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
                   label="I want to receive inspiration, marketing promotions and updates via email."
                 />
               </Grid> */}
+              
+              <Grid item xs={10}>
+                <TextField
+                size="small"
+                  fullWidth
+                  name="nationalId"
+                  label="متن داخل تصویر را وارد کنید"
+                  type="tel"
+                  id="nationalId"
+                />
+              </Grid>
+              <Grid item xs={10} sx={{display:'flex', justifyContent:'flex-end'}}>
+                <LoadCanvasTemplateNoReload />
+              </Grid>
             </Grid>
             <Button
               type="submit"
@@ -118,13 +155,7 @@ export default function RegisterForm() {
             >
               ثبت
             </Button>
-            {/* <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
-              </Grid>
-            </Grid> */}
+            
           </Box>
         </Box>
         {/* <Copyright sx={{ mt: 5 }} /> */}
