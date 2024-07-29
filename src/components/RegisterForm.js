@@ -21,6 +21,7 @@ import { useEffect } from "react";
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import cover from '../assets/bgi.jpg';
+import { green } from "@mui/material/colors";
 
 
 const cacheRtl = createCache({
@@ -29,6 +30,7 @@ const cacheRtl = createCache({
 });
 
 export default function RegisterForm() {
+    const btnColor = green[500];
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -47,7 +49,7 @@ export default function RegisterForm() {
 
   return (
     <CacheProvider value={cacheRtl}>
-      <Container component="main" maxWidth="xs" sx={{backgroundImage:(!matches && `url(${cover})`), backgroundSize:'cover',  borderRadius:'9px'}}>
+      <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
@@ -55,6 +57,12 @@ export default function RegisterForm() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            borderTop: 1,
+            borderLeft:1,
+            borderRight:1,
+            borderColor: 'grey.500',
+            borderRadius: '16px',
+            paddingBottom:'1.5rem'
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
@@ -157,7 +165,7 @@ export default function RegisterForm() {
               type="submit"
               fullWidth
               variant="contained"
-              color="success"
+              color="myBtn"
               sx={{ mt: 3, mb: 2 }}
             >
               ثبت
