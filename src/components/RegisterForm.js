@@ -31,24 +31,67 @@ const cacheRtl = createCache({
 
 export default function RegisterForm() {
   const btnColor = green[500];
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-    
+    if (validateCaptcha(data.get("capcha"), false) == true) {
+      const res = await fetch("https://personal-website-backend-lxs6.onrender.com/course-register", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          firstName: data.get("firstName"),
+          lastName: data.get("lastName"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          nationalId: data.get("nationalId"),
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          Swal.fire({
+            icon: "success",
+            title: "ثبت نام با موفقیت انجام شد",
+            showConfirmButton: false,
+            timer: 2000,
+          });
+        }).catch(error =>{
+          Swal.fire({
+            icon: "error",
+            title: "something went wrong",
+            showConfirmButton: false,
+            timer: 2000,
+          });
+        })
+    } else {
+      console.log('wrong capcha');
+    }
   };
 
-  const test =() =>{
-    Swal.fire({
-      icon: "success",
-      title: "Your work has been saved",
-      showConfirmButton: false,
-      timer: 2000,
-    });
-  }
+  const test = async () => {
+    const res = await fetch("http://localhost:3000/course-register", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        firstName: "sample",
+        lastName: "sample last",
+        email: "sample@y.com",
+        phone: "00000",
+        nationalId: "98324938",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
   console.log(matches);
@@ -83,6 +126,7 @@ export default function RegisterForm() {
           </Typography>
           <Box
             component="form"
+            id="data"
             noValidate
             onSubmit={handleSubmit}
             sx={{ mt: 3 }}
@@ -155,7 +199,7 @@ export default function RegisterForm() {
                 <TextField
                   size="small"
                   fullWidth
-                  name="nationalId"
+                  name="capcha"
                   label="متن داخل تصویر را وارد کنید"
                   type="text"
                   id="nationalId"
@@ -174,7 +218,8 @@ export default function RegisterForm() {
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
       <Button
-      onClick={test}
+        // onClick={test}
+        form="data"
         type="submit"
         fullWidth
         variant="contained"
