@@ -52,12 +52,21 @@ export default function RegisterForm() {
       })
         .then((res) => res.json())
         .then((data) => {
-          Swal.fire({
-            icon: "success",
-            title: "ثبت نام با موفقیت انجام شد",
-            showConfirmButton: false,
-            timer: 2000,
-          });
+          if(data.message){
+            Swal.fire({
+              icon: "error",
+              title: data.message,
+              showConfirmButton: false,
+              timer: 2000,
+            });
+          } else{
+            Swal.fire({
+              icon: "success",
+              title: "ثبت نام با موفقیت انجام شد",
+              showConfirmButton: false,
+              timer: 2000,
+            });
+          }
         }).catch(error =>{
           Swal.fire({
             icon: "error",
