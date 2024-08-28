@@ -1,6 +1,7 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 const List = () =>{
+    const [data, setData] = useState([]);
     useEffect(() =>{
         const token = localStorage.getItem('token')
         console.log(JSON.parse(token));
@@ -12,9 +13,13 @@ const List = () =>{
           "Access-Control-Allow-Origin": "*",
           "Authorization": "Bearer " + JSON.parse(token)
         },
-        }).then((res) => res.json()).then( list =>{console.log(list);})
+        }).then((res) => res.json()).then( list =>{setData(list);})
     },[])
-    return <h1>test</h1>
+    return (
+        <div>
+            {data.map(item => <h3 key={item.id}>{item.first_name} {item.last_name}</h3>)}
+        </div>
+    )
 }
 
 export default List;
