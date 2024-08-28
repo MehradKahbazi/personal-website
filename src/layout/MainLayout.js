@@ -29,7 +29,7 @@ const MainLayout = () => {
               My Personal website
             </Typography>
             <IconButton>
-              <MenuIcon onClick={toggleDrawer(true)} />
+              {/* <MenuIcon onClick={toggleDrawer(true)} /> */}
             </IconButton>
           </Toolbar>
         </AppBar>

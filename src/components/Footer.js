@@ -11,7 +11,7 @@ export default function Footer() {
   const [value, setValue] = useState(0);
 
   return (
-    <Box component="footer" square variant="outlined" sx={{
+    <Box component="footer"  variant="outlined" sx={{
       position: 'relative',
       bottom: 0,
       width: '100%',
