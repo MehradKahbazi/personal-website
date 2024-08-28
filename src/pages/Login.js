@@ -8,7 +8,7 @@ const Login = () => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const res = await fetch(
-      "http://localhost:3000/auth/signin",
+      "https://personal-website-backend-lxs6.onrender.com/auth/signin",
       {
         method: "POST",
         headers: {

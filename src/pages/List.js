@@ -5,7 +5,7 @@ const List = () =>{
     useEffect(() =>{
         const token = localStorage.getItem('token')
         console.log(JSON.parse(token));
-        fetch('http://localhost:3000/course-register',{
+        fetch('https://personal-website-backend-lxs6.onrender.com/course-register',{
             method: "GET",
         headers: {
           Accept: "application/json",
