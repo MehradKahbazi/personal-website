@@ -1,6 +1,8 @@
 import styles from "./MenuData.module.css";
 
 const MenuData = ({collaspsed}) => {
+
+    const data = [ 'Home', 'Our Story', 'Services', 'Contact']
   return (
     <div className={collaspsed ? styles.collapsed : styles.menu} >
         <div className={styles.data}>
