@@ -1,0 +1,69 @@
+.data {
+  padding: 8em 0 0 2em;
+  text-align: left;
+}
+.list {
+  list-style: none;
+}
+.item:first-child {
+  color: grey;
+  font-family: Poppins;
+  font-size: 24px;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, -200, 0);
+  
+}
+.item:not(:first-child) {
+  color: #fff;
+  font-size: 42px;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, -200, 0);
+  
+}
+
+.activeitem:first-child {
+  color: grey;
+  font-family: Poppins;
+  font-size: 24px;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, -200, 0);
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all ease-in 1000ms;
+}
+.activeitem:not(:first-child) {
+  color: #fff;
+  font-size: 42px;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, -200, 0);
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all ease-in 1000ms;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+}
+.menu {
+  z-index: 0;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+  height: 100vh;
+  width: 100%;
+  top: -100%;
+  opacity: 0;
+  transition: all 600ms linear;
+}
+
+.collapsed {
+  z-index: 1;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  opacity: 1;
+  transition: all 600ms linear;
+}

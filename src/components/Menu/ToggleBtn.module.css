@@ -1,0 +1,15 @@
+.hamburger{
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 7px;
+}
+
+.toggle{
+    position: fixed;
+    right: 0;
+    padding: 1.4rem;
+    margin: 1rem;
+    z-index: 2;
+}
