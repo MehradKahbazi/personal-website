@@ -1,0 +1,10 @@
+.position {
+  top: 80px;
+  transform: translateX(-30%);
+  right: 0;
+  color: #eee;
+  padding: 1rem;
+  background-color: rgba(49, 48, 48, 0.5);
+  border-radius: 5px;
+  width: 40vw;
+}
