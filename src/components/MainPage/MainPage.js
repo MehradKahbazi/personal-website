@@ -16,7 +16,7 @@ const MainPage = () => {
           <h1 className="text-center mb-5">
           Mehrad Kahbazi
           </h1>
-          <div className="my-4">
+          <div className="my-4 d-none d-lg-block">
           <h3>About Me</h3>
             <p className="mb-3">
               Creative and detail-oriented Front-End Developer with over 4 years
