@@ -52,7 +52,7 @@ const MainPage = () => {
         <section className={`row align-items-center ${styles.height}`}>
           <div className="col-lg-12 text-center">
             <small className="text-secondary">Get to Know More</small>
-            <h2>About Me</h2>
+            <h2 className={styles.divider}><span>About Me</span></h2>
           </div>
           <div className="col-lg-4">
             <Image src={profile} className="img-fluid rounded"></Image>
@@ -91,12 +91,12 @@ const MainPage = () => {
           </div>
         </section>
 
-        <section className={`row ${styles.height}`}>
+        <section className={`row ${styles.height} my-3`}>
           <div className="col-lg-12 text-center">
             <small className="text-secondary">Explore My</small>
-            <h2>Portfolio</h2>
+            <h2 className={styles.divider}><span>Portfolio</span></h2>
           </div>
-          <div className="col-lg-12">
+          <div className="col-lg-12 my-5">
             <div className="row">
               <div className="col-lg-6">
                 <Image src={sample} className="img-fluid h-100" />
