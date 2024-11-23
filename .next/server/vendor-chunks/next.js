@@ -21,6 +21,16 @@ eval("/**\n * Hoists a name from a module or promised module.\n *\n * @param mod
 
 /***/ }),
 
+/***/ "./node_modules/next/font/local/target.css?{\"path\":\"node_modules\\\\geist\\\\dist\\\\sans.js\",\"import\":\"\",\"arguments\":[{\"src\":\"./fonts/geist-sans/Geist-Variable.woff2\",\"variable\":\"--font-geist-sans\",\"weight\":\"100 900\"}],\"variableName\":\"GeistSans\"}":
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/font/local/target.css?{"path":"node_modules\\geist\\dist\\sans.js","import":"","arguments":[{"src":"./fonts/geist-sans/Geist-Variable.woff2","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"GeistSans"} ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module) => {
+
+eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__GeistSans_3a0388', '__GeistSans_Fallback_3a0388'\"},\n\t\"className\": \"__className_3a0388\",\n\t\"variable\": \"__variable_3a0388\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvbmV4dC9mb250L2xvY2FsL3RhcmdldC5jc3M/e1wicGF0aFwiOlwibm9kZV9tb2R1bGVzXFxcXGdlaXN0XFxcXGRpc3RcXFxcc2Fucy5qc1wiLFwiaW1wb3J0XCI6XCJcIixcImFyZ3VtZW50c1wiOlt7XCJzcmNcIjpcIi4vZm9udHMvZ2Vpc3Qtc2Fucy9HZWlzdC1WYXJpYWJsZS53b2ZmMlwiLFwidmFyaWFibGVcIjpcIi0tZm9udC1nZWlzdC1zYW5zXCIsXCJ3ZWlnaHRcIjpcIjEwMCA5MDBcIn1dLFwidmFyaWFibGVOYW1lXCI6XCJHZWlzdFNhbnNcIn0iLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBLFdBQVcsbUVBQW1FO0FBQzlFO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3BlcnNvbmFsLXBvcnRmb2xpby8uL25vZGVfbW9kdWxlcy9uZXh0L2ZvbnQvbG9jYWwvdGFyZ2V0LmNzcz81NmM4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcInN0eWxlXCI6IHtcImZvbnRGYW1pbHlcIjpcIidfX0dlaXN0U2Fuc18zYTAzODgnLCAnX19HZWlzdFNhbnNfRmFsbGJhY2tfM2EwMzg4J1wifSxcblx0XCJjbGFzc05hbWVcIjogXCJfX2NsYXNzTmFtZV8zYTAzODhcIixcblx0XCJ2YXJpYWJsZVwiOiBcIl9fdmFyaWFibGVfM2EwMzg4XCJcbn07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/next/font/local/target.css?{\"path\":\"node_modules\\\\geist\\\\dist\\\\sans.js\",\"import\":\"\",\"arguments\":[{\"src\":\"./fonts/geist-sans/Geist-Variable.woff2\",\"variable\":\"--font-geist-sans\",\"weight\":\"100 900\"}],\"variableName\":\"GeistSans\"}\n");
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/client/image-component.js":
 /*!**********************************************************!*\
   !*** ./node_modules/next/dist/client/image-component.js ***!

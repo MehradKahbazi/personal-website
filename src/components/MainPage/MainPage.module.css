@@ -8,3 +8,14 @@
   border-radius: 5px;
   width: 40vw;
 }
+
+.background{
+  background-image: url(../../asstes/images/10026.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.height{
+  height: 75vh;
+}

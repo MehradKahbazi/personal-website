@@ -1,10 +1,11 @@
 import Menu from "../Menu/Menu";
+import { GeistSans } from 'geist/font/sans';
 
 const Layout = (props) => {
   return (
     <>
       <Menu />
-      <div>{props.children}</div>
+      <div className={GeistSans.className}>{props.children}</div>
     </>
   );
 };
