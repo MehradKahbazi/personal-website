@@ -27,7 +27,7 @@ const MainPage = () => {
               <h3>Front-End Developer</h3>
               <div className="d-flex justify-content-center align-items-center w-100 gap-3 my-3">
                 <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Contact Me</a>
-                <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Download My Resume</a>
+                <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Download Resume</a>
               </div>
               <div className="d-flex justify-content-center align-items-center w-50 gap-3">
                 <Image src={linkedin} height={32} width={32} />
