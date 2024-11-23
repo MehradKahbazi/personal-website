@@ -9,18 +9,7 @@ import github from "@/asstes/images/github.svg";
 const MainPage = () => {
   return (
     <>
-      {/* <header className="position-relative">
-        <Image
-          src={topImg}
-          alt="header photo"
-          quality={100}
-          className="img-fluid w-100"
-        />
-        <div className={`position-absolute ${styles.position} shadow`}>
-          <h1 className="text-center my-1">Mehrad Kahbazi</h1>
-          
-        </div>
-      </header> */}
+      
 
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
         <div className={`container ${styles.top}`}>
@@ -36,9 +25,9 @@ const MainPage = () => {
             <div className="col-lg-5 d-flex flex-column align-items-center h-100 my-4">
               <h1 className="text-center my-1">Mehrad Kahbazi</h1>
               <h3>Front-End Developer</h3>
-              <div className="d-flex justify-content-center align-items-center w-50 gap-3">
-                <a href="#" className="custom-btn"></a>
-                <a href="#" className="custom-btn"></a>
+              <div className="d-flex justify-content-center align-items-center w-100 gap-3 my-3">
+                <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Contact Me</a>
+                <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Download My Resume</a>
               </div>
               <div className="d-flex justify-content-center align-items-center w-50 gap-3">
                 <Image src={linkedin} height={32} width={32} />
@@ -58,24 +47,7 @@ const MainPage = () => {
             <Image src={profile} className="img-fluid rounded"></Image>
           </div>
           <div className="col-lg-8 ">
-            <div className="row d-flex justify-content-around h-100 align-items-start">
-              <div className="col-lg-6 mt-3">
-              <div className="card px-5">
-                <div className="card-body text-center">
-                  <Image src={medal} height={32} width={32} />
-                  <h3>Experience</h3>
-                </div>
-              </div>
-              </div>
-              <div className="col-lg-6 mt-3">
-              <div className="card px-5">
-                <div className="card-body text-center">
-                  <Image src={medal} height={32} width={32} />
-                  <h3>Education</h3>
-                </div>
-              </div>
-              </div>
-            </div>
+            
             <div className="about">
               <p className="p-5">
                 Creative and detail-oriented Front-End Developer with over 4
@@ -87,6 +59,26 @@ const MainPage = () => {
                 designs into high-quality, optimized code while staying
                 up-to-date with industry trends and best practices.
               </p>
+            </div>
+            <div className="row d-flex justify-content-around h-100 align-items-start">
+              <div className="col-lg-6">
+              <div className="card px-5">
+                <div className="card-body text-center">
+                  <Image src={medal} height={32} width={32} />
+                  <h3>Experience</h3>
+                  <p>+4 Years as a Front-end Developer</p>
+                </div>
+              </div>
+              </div>
+              <div className="col-lg-6">
+              <div className="card px-5">
+                <div className="card-body text-center">
+                  <Image src={medal} height={32} width={32} />
+                  <h3>Education</h3>
+                  <p>BS of Software Engineering</p>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
         </section>
