@@ -24,7 +24,7 @@ const MainPage = () => {
 
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
         <div className={`container ${styles.top}`}>
-          <section className={`row  justify-content-center`}>
+          <section className="row justify-content-center">
             <div className="col-lg-6">
               <Image
                 src={topImg}
@@ -33,7 +33,7 @@ const MainPage = () => {
                 className="img-fluid w-100"
               />
             </div>
-            <div className="col-lg-5 d-flex flex-column align-items-center  h-100 ms-4 my-4">
+            <div className="col-lg-5 d-flex flex-column align-items-center h-100 my-4">
               <h1 className="text-center my-1">Mehrad Kahbazi</h1>
               <h3>Front-End Developer</h3>
               <div className="d-flex justify-content-center align-items-center w-50 gap-3">
