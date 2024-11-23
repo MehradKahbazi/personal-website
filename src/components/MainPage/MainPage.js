@@ -4,8 +4,8 @@ import sample from "../../asstes/images/sample.jpg";
 import styles from "./MainPage.module.css";
 import profile from "../../asstes/images/pro.jpg";
 import medal from "@/asstes/images/medal.svg";
-import linkedin from '@/asstes/images/linkedin.svg'
-import github from '@/asstes/images/github.svg'
+import linkedin from "@/asstes/images/linkedin.svg";
+import github from "@/asstes/images/github.svg";
 const MainPage = () => {
   return (
     <>
@@ -22,35 +22,33 @@ const MainPage = () => {
         </div>
       </header> */}
 
-<div className={`container-fluid m-0 p-0 ${styles.background}`}>
-      <div className="container">
-      <section className={`row align-items-center ${styles.height}`}>
-          <div className="col-lg-6">
-            <Image
-              src={topImg}
-              alt="header photo"
-              quality={100}
-              className="img-fluid w-100"
-            />
-          </div>
-          <div className="col-lg-5 d-flex flex-column align-items-start justify-content-start h-50 ms-4">
-            <h1 className="text-center my-1">Mehrad Kahbazi</h1>
-            <h3>Front-End Developer</h3>
-            <div className="d-flex justify-content-center align-items-center w-50 gap-3">
-              <a href="#" className="custom-btn"></a>
-              <a href="#" className="custom-btn"></a>
+      <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
+        <div className="container">
+          <section className={`row  justify-content-center`}>
+            <div className="col-lg-6">
+              <Image
+                src={topImg}
+                alt="header photo"
+                quality={100}
+                className="img-fluid w-100"
+              />
             </div>
-            <div className="d-flex justify-content-center align-items-center w-50 gap-3">
-              <Image src={linkedin} height={32} width={32} />
-              <Image src={github} height={32} width={32} />
+            <div className="col-lg-5 d-flex flex-column align-items-center  h-100 ms-4 my-4">
+              <h1 className="text-center my-1">Mehrad Kahbazi</h1>
+              <h3>Front-End Developer</h3>
+              <div className="d-flex justify-content-center align-items-center w-50 gap-3">
+                <a href="#" className="custom-btn"></a>
+                <a href="#" className="custom-btn"></a>
+              </div>
+              <div className="d-flex justify-content-center align-items-center w-50 gap-3">
+                <Image src={linkedin} height={32} width={32} />
+                <Image src={github} height={32} width={32} />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-</div>
       <div className="container my-3">
-        
-
         <section className={`row align-items-center ${styles.height}`}>
           <div className="col-lg-12 text-center">
             <small className="text-secondary">Get to Know More</small>
@@ -60,18 +58,22 @@ const MainPage = () => {
             <Image src={profile} className="img-fluid rounded"></Image>
           </div>
           <div className="col-lg-8 ">
-            <div className="cards d-flex justify-content-around h-100 align-items-start">
+            <div className="row d-flex justify-content-around h-100 align-items-start">
+              <div className="col-lg-6 mt-3">
               <div className="card px-5">
                 <div className="card-body text-center">
                   <Image src={medal} height={32} width={32} />
                   <h3>Experience</h3>
                 </div>
               </div>
+              </div>
+              <div className="col-lg-6 mt-3">
               <div className="card px-5">
                 <div className="card-body text-center">
                   <Image src={medal} height={32} width={32} />
                   <h3>Education</h3>
                 </div>
+              </div>
               </div>
             </div>
             <div className="about">
