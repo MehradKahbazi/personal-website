@@ -23,7 +23,7 @@ const MainPage = () => {
       </header> */}
 
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
-        <div className="container my-5">
+        <div className={`container ${styles.top}`}>
           <section className={`row  justify-content-center`}>
             <div className="col-lg-6">
               <Image
