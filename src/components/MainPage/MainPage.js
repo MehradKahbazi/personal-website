@@ -29,7 +29,7 @@ const MainPage = () => {
                 <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Contact Me</a>
                 <a href="#" className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}>Download Resume</a>
               </div>
-              <div className="d-flex justify-content-center align-items-center w-50 gap-3">
+              <div className="d-flex justify-content-center align-items-center w-50 gap-3 pt-3">
                 <Image src={linkedin} height={32} width={32} />
                 <Image src={github} height={32} width={32} />
               </div>
@@ -62,7 +62,7 @@ const MainPage = () => {
             </div>
             <div className="row d-flex justify-content-around h-100 align-items-start">
               <div className="col-lg-6">
-              <div className="card px-5">
+              <div className="card px-5 mt-3">
                 <div className="card-body text-center">
                   <Image src={medal} height={32} width={32} />
                   <h3>Experience</h3>
@@ -70,7 +70,7 @@ const MainPage = () => {
                 </div>
               </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 mt-3">
               <div className="card px-5">
                 <div className="card-body text-center">
                   <Image src={medal} height={32} width={32} />
