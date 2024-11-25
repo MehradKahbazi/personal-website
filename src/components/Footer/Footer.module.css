@@ -1,0 +1,9 @@
+.footer{
+    background-image: url(../../asstes/images/foot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blur{
+    background-color:#23362b8c;
+}
