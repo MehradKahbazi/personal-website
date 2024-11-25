@@ -143,95 +143,95 @@ const MainPage = () => {
                     <h1 className="text-center">Front-End</h1>
                     <div className="d-flex justify-content-around">
                       <div className="w-50">
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-4 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-4 my-2 p-0">
                             <Image width={30} height={30} src={html}></Image>
-                            <p>html</p>
+                            <small className="mt-1 d-block">html</small>
                           </div>
-                          <div className="text-center col-lg-4 mt-2">
+                          <div className="text-center col-lg-4 my-2 p-0">
                             <Image width={30} height={30} src={css}></Image>
-                            <p>css</p>
+                            <small className="mt-1 d-block">css</small>
                           </div>
-                          <div className="text-center col-lg-4 mt-2">
+                          <div className="text-center col-lg-4 my-2 p-0">
                             <Image width={30} height={30} src={scss}></Image>
-                            <p>scss</p>
+                            <small className="mt-1 d-block">scss</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={js}></Image>
-                            <p>JS</p>
+                            <small className="mt-1 d-block">JS</small>
                           </div>
-                          <div className="text-center col-lg-6 mt-2">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image
                               width={30}
                               height={30}
                               src={typescript}
                             ></Image>
-                            <p>TS</p>
+                            <small className="mt-1 d-block">TS</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={react}></Image>
-                            <p>React</p>
+                            <small className="mt-1 d-block">ReactJs</small>
                           </div>
-                          <div className="text-center col-lg-6 mt-2">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={next}></Image>
-                            <p>Next</p>
+                            <small className="mt-1 d-block">NextJs</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image
                               width={30}
                               height={30}
                               src={bootstrap}
                             ></Image>
-                            <p style={{ wordWrap: "normal" }}>Bootstrap</p>
+                            <small className="mt-1 d-block">Bootstrap</small>
                           </div>
-                          <div className="text-center col-lg-6 mt-2">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image
                               width={30}
                               height={30}
                               src={tailwind}
                             ></Image>
-                            <p>Tailwind</p>
+                            <small className="mt-1 d-block">Tailwind</small>
                           </div>
                         </div>
                       </div>
                       <div className="w-50">
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-5 mt-2">
+                        <div className="row border rounded m-1 px-2 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-5 my-2 p-0">
                             <Image width={30} height={30} src={webpack}></Image>
-                            <p>Webpack</p>
+                            <small className="mt-1 d-block">Webpack</small>
                           </div>
-                          <div className="text-center col-lg-5 mt-2">
+                          <div className="text-center col-lg-5 my-2 p-0">
                             <Image
                               width={30}
                               height={30}
                               src={turbopack}
                             ></Image>
-                            <p>Turbopack</p>
+                            <small className="mt-1 d-block">Turbopack</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex">
-                          <div className="text-center col-lg-12 mt-2">
+                        <div className="row border rounded m-1 px-2 py-2 d-flex">
+                          <div className="text-center col-lg-12 my-2 p-0">
                             <Image width={30} height={30} src={sync}></Image>
-                            <p>Axios / SWR</p>
+                            <small className="mt-1 d-block">Axios / SWR</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex">
-                          <div className="col-lg-12 text-center mt-2">
+                        <div className="row border rounded m-1 px-2 py-2 d-flex">
+                          <div className="col-lg-12 text-center my-2 p-0">
                             <Image width={30} height={30} src={data}></Image>
-                            <p>Context Api</p>
+                            <small className="mt-1 d-block">Context Api</small>
                           </div>
                         </div>
 
-                        <div className="row border rounded m-3 px-2 py-2 d-flex">
-                          <div className="col-lg-12 text-center mt-2">
+                        <div className="row border rounded m-1 px-2 py-2 d-flex">
+                          <div className="col-lg-12 text-center my-2 p-0">
                             <Image width={30} height={30} src={pwa}></Image>
-                            <p>PWA</p>
+                            <small className="mt-1 d-block">PWA</small>
                           </div>
                         </div>
                       </div>
@@ -245,96 +245,96 @@ const MainPage = () => {
                     <h1 className="text-center">Back-End</h1>
                     <div className="d-flex justify-content-around">
                       <div className="w-50">
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-4 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-4 p-0 my-2">
                             <Image width={30} height={30} src={nodejs}></Image>
-                            <p>Nodejs</p>
+                            <small className="mt-1 d-block">NodeJs</small>
                           </div>
-                          <div className="text-center col-lg-4 mt-2">
+                          <div className="text-center col-lg-4 p-0 my-2">
                             <Image width={30} height={30} src={express}></Image>
-                            <p>Expressjs</p>
+                            <small className="mt-1 d-block">ExpressJs</small>
                           </div>
-                          <div className="text-center col-lg-4 mt-2">
+                          <div className="text-center col-lg-4 p-0 my-2">
                             <Image width={30} height={30} src={nest}></Image>
-                            <p>NestJs</p>
+                            <small className="d-block mt-1">NestJs</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 p-0 my-2">
                             <Image width={30} height={30} src={solid}></Image>
-                            <p>SOLID Principles</p>
+                            <small className="mt-1 d-block">SOLID Principles</small>
                           </div>
                           <div className="text-center col-lg-6 mt-2">
                             <Image width={30} height={30} src={oop}></Image>
-                            <p>OOP</p>
+                            <small className="mt-1 d-block">OOP</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={typeorm}></Image>
-                            <p>TypeORM</p>
+                            <small className="mt-1 d-block">TypeORM</small>
                           </div>
-                          <div className="text-center col-lg-6 mt-2">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={prisma}></Image>
-                            <p>Prisma</p>
+                            <small className="mt-1 d-block">Prisma</small>
                           </div>
                         </div>
 
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={npm}></Image>
-                            <p style={{ wordWrap: "normal" }}>Npm</p>
+                            <small className="mt-1 d-block">Npm</small>
                           </div>
-                          <div className="text-center col-lg-6 mt-2">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={pnpm}></Image>
-                            <p>Pnpm</p>
+                            <small className="mt-1 d-block">Pnpm</small>
                           </div>
                         </div>
                       </div>
                       <div className=" w-50">
-                        <div className="row border rounded m-3 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={yarn}></Image>
-                            <p>Yarn</p>
+                            <small className="mt-1 d-block">Yarn</small>
                           </div>
-                          <div className="text-center col-lg-5 mt-2">
+                          <div className="text-center col-lg-5 my-2 p-0">
                             <Image
                               width={30}
                               height={30}
                               src={nvm}
                             ></Image>
-                            <p>Nvm</p>
+                            <small className="mt-1 d-block">Nvm</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex">
-                          <div className="text-center col-lg-6 mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={rest}></Image>
-                            <p>Restful Api</p>
+                            <small className="mt-1 d-block">Restful Api</small>
                           </div>
-                          <div className="text-center col-lg-6 mt-2">
+                          <div className="text-center col-lg-6 my-2 p-0">
                             <Image width={30} height={30} src={graphql}></Image>
-                            <p>GraphQl</p>
+                            <small className="mt-1 d-block">GraphQl</small>
                           </div>
                         </div>
-                        <div className="row border rounded m-3 px-2 py-2 d-flex">
-                          <div className="col-lg-12 text-center mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex">
+                          <div className="col-lg-12 text-center my-2 p-0">
                             <Image width={30} height={30} src={jwt}></Image>
-                            <p>JWT Token</p>
+                            <small className="mt-1 d-block">JWT Token</small>
                           </div>
                         </div>
 
-                        <div className="row border rounded m-3 px-2 py-2 d-flex">
-                          <div className="col-lg-4 text-center mt-2">
+                        <div className="row border rounded m-1 px-0 py-2 d-flex">
+                          <div className="col-lg-4 text-center my-2 p-0">
                             <Image width={30} height={30} src={sql}></Image>
-                            <p>SQL</p>
+                            <small className="mt-1 d-block">SQL</small>
                           </div>
-                          <div className="col-lg-4 text-center mt-2">
+                          <div className="col-lg-4 text-center my-2 p-0">
                             <Image width={30} height={30} src={postgre}></Image>
-                            <p>PostgreSQL</p>
+                            <small className="mt-1 d-block">PostgreSQL</small>
                           </div>
-                          <div className="col-lg-4 text-center mt-2">
+                          <div className="col-lg-4 text-center my-2 p-0">
                             <Image width={30} height={30} src={mongo}></Image>
-                            <p>Mongo DB</p>
+                            <small className="mt-1 d-block" >Mongo DB</small>
                           </div>
                         </div>
                       </div>
