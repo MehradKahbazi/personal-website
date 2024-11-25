@@ -32,7 +32,7 @@ const Footer = () => {
             </section>
             <section className="row align-items-end">
             <div className="col-lg-12 bg-black p-3">
-                    <small className="d-block text-center text-light font-weight-lighter">All Rights reserved by Mehrad Kahbazi® 2024</small>
+                    <small className="d-block text-center text-secondary font-weight-lighter">Copyright© 2024 Mehrad Kahbazi</small>
                 </div>
             </section>
             
