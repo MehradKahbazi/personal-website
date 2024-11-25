@@ -81,3 +81,7 @@
   color: #fff;
   background-color: #000;
 }
+
+.inside{
+  list-style-position: inside;
+}
