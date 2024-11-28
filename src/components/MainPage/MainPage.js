@@ -135,210 +135,128 @@ const MainPage = () => {
             </h2>
           </div>
           <div className="col-lg-12 my-5">
-            <div className="row">
-              <div className="col-lg-6 mt-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h1 className="text-center">Front-End</h1>
-                    <div className="d-flex justify-content-around">
-                      <div className="w-50">
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-4 my-2 p-0">
-                            <Image width={30} height={30} src={html}></Image>
-                            <small className="mt-1 d-block">html</small>
-                          </div>
-                          <div className="text-center col-lg-4 my-2 p-0">
-                            <Image width={30} height={30} src={css}></Image>
-                            <small className="mt-1 d-block">css</small>
-                          </div>
-                          <div className="text-center col-lg-4 my-2 p-0">
-                            <Image width={30} height={30} src={scss}></Image>
-                            <small className="mt-1 d-block">scss</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={js}></Image>
-                            <small className="mt-1 d-block">JS</small>
-                          </div>
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image
-                              width={30}
-                              height={30}
-                              src={typescript}
-                            ></Image>
-                            <small className="mt-1 d-block">TS</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={react}></Image>
-                            <small className="mt-1 d-block">ReactJs</small>
-                          </div>
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={next}></Image>
-                            <small className="mt-1 d-block">NextJs</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image
-                              width={30}
-                              height={30}
-                              src={bootstrap}
-                            ></Image>
-                            <small className="mt-1 d-block">Bootstrap</small>
-                          </div>
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image
-                              width={30}
-                              height={30}
-                              src={tailwind}
-                            ></Image>
-                            <small className="mt-1 d-block">Tailwind</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-50">
-                        <div className="row border rounded m-1 px-2 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-5 my-2 p-0">
-                            <Image width={30} height={30} src={webpack}></Image>
-                            <small className="mt-1 d-block">Webpack</small>
-                          </div>
-                          <div className="text-center col-lg-5 my-2 p-0">
-                            <Image
-                              width={30}
-                              height={30}
-                              src={turbopack}
-                            ></Image>
-                            <small className="mt-1 d-block">Turbopack</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-2 py-2 d-flex">
-                          <div className="text-center col-lg-12 my-2 p-0">
-                            <Image width={30} height={30} src={sync}></Image>
-                            <small className="mt-1 d-block">Axios / SWR</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-2 py-2 d-flex">
-                          <div className="col-lg-12 text-center my-2 p-0">
-                            <Image width={30} height={30} src={data}></Image>
-                            <small className="mt-1 d-block">Context Api</small>
-                          </div>
-                        </div>
-
-                        <div className="row border rounded m-1 px-2 py-2 d-flex">
-                          <div className="col-lg-12 text-center my-2 p-0">
-                            <Image width={30} height={30} src={pwa}></Image>
-                            <small className="mt-1 d-block">PWA</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div className="row justify-content-around">
+              <div className="col-lg-5 mt-3">
+                <h1 className="text-center">Front-End</h1>
+                <div className="row m-1 px-0 py-2 d-flex justify-content-around">
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={html}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={css}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={scss}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={js}></Image>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-6 mt-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h1 className="text-center">Back-End</h1>
-                    <div className="d-flex justify-content-around">
-                      <div className="w-50">
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-4 p-0 my-2">
-                            <Image width={30} height={30} src={nodejs}></Image>
-                            <small className="mt-1 d-block">NodeJs</small>
-                          </div>
-                          <div className="text-center col-lg-4 p-0 my-2">
-                            <Image width={30} height={30} src={express}></Image>
-                            <small className="mt-1 d-block">ExpressJs</small>
-                          </div>
-                          <div className="text-center col-lg-4 p-0 my-2">
-                            <Image width={30} height={30} src={nest}></Image>
-                            <small className="d-block mt-1">NestJs</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 p-0 my-2">
-                            <Image width={30} height={30} src={solid}></Image>
-                            <small className="mt-1 d-block">SOLID Principles</small>
-                          </div>
-                          <div className="text-center col-lg-6 mt-2">
-                            <Image width={30} height={30} src={oop}></Image>
-                            <small className="mt-1 d-block">OOP</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={typeorm}></Image>
-                            <small className="mt-1 d-block">TypeORM</small>
-                          </div>
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={prisma}></Image>
-                            <small className="mt-1 d-block">Prisma</small>
-                          </div>
-                        </div>
-
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={npm}></Image>
-                            <small className="mt-1 d-block">Npm</small>
-                          </div>
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={pnpm}></Image>
-                            <small className="mt-1 d-block">Pnpm</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div className=" w-50">
-                        <div className="row border rounded m-1 px-0 py-2 d-flex justify-content-around">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={yarn}></Image>
-                            <small className="mt-1 d-block">Yarn</small>
-                          </div>
-                          <div className="text-center col-lg-5 my-2 p-0">
-                            <Image
-                              width={30}
-                              height={30}
-                              src={nvm}
-                            ></Image>
-                            <small className="mt-1 d-block">Nvm</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex">
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={rest}></Image>
-                            <small className="mt-1 d-block">Restful Api</small>
-                          </div>
-                          <div className="text-center col-lg-6 my-2 p-0">
-                            <Image width={30} height={30} src={graphql}></Image>
-                            <small className="mt-1 d-block">GraphQl</small>
-                          </div>
-                        </div>
-                        <div className="row border rounded m-1 px-0 py-2 d-flex">
-                          <div className="col-lg-12 text-center my-2 p-0">
-                            <Image width={30} height={30} src={jwt}></Image>
-                            <small className="mt-1 d-block">JWT Token</small>
-                          </div>
-                        </div>
-
-                        <div className="row border rounded m-1 px-0 py-2 d-flex">
-                          <div className="col-lg-4 text-center my-2 p-0">
-                            <Image width={30} height={30} src={sql}></Image>
-                            <small className="mt-1 d-block">SQL</small>
-                          </div>
-                          <div className="col-lg-4 text-center my-2 p-0">
-                            <Image width={30} height={30} src={postgre}></Image>
-                            <small className="mt-1 d-block">PostgreSQL</small>
-                          </div>
-                          <div className="col-lg-4 text-center my-2 p-0">
-                            <Image width={30} height={30} src={mongo}></Image>
-                            <small className="mt-1 d-block" >Mongo DB</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="row m-1 px-0 py-2 d-flex justify-content-around">
+                <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={typescript}></Image>
                   </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={react}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={next}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={bootstrap}></Image>
+                  </div>
+                </div>
+                
+                <div className="row m-1 px-2 py-2 d-flex justify-content-around">
+                <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={tailwind}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={webpack}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={turbopack}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={sync}></Image>
+                  </div>
+                </div>
+                
+                <div className="row m-1 px-2 py-2 d-flex">
+                  <div className="col-lg-3 text-center my-2 p-0">
+                    <Image width={30} height={30} src={data}></Image>
+                  </div>
+                  <div className="col-lg-3 text-center my-2 p-0">
+                    <Image width={30} height={30} src={pwa}></Image>
+                  </div>
+                </div>
+
+               
+              </div>
+              <div className="col-lg-5 mt-3">
+                <h1 className="text-center">Back-End</h1>
+                <div className="row m-1 px-0 py-2 justify-content-around">
+                  <div className="text-center col-lg-3 p-0 my-2">
+                    <Image width={30} height={30} src={nodejs}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 p-0 my-2">
+                    <Image width={30} height={30} src={express}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 p-0 my-2">
+                    <Image width={30} height={30} src={nest}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 p-0 my-2">
+                    <Image width={30} height={30} src={solid}></Image>
+                  </div>
+                </div>
+                <div className="row m-1 px-0 py-2 justify-content-around">
+                  <div className="text-center col-lg-3 mt-2">
+                    <Image width={30} height={30} src={oop}></Image>
+                    <small className="mt-1 d-block">OOP</small>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={typeorm}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={prisma}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={npm}></Image>
+                  </div>
+                </div>
+
+                <div className="row m-1 px-0 py-2 d-flex justify-content-around">
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={pnpm}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={yarn}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={nvm}></Image>
+                  </div>
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={rest}></Image>
+                  </div>
+                </div>
+
+                <div className="row m-1 px-0 py-2 d-flex">
+                  <div className="text-center col-lg-3 my-2 p-0">
+                    <Image width={30} height={30} src={graphql}></Image>
+                  </div>
+                  <div className="col-lg-3 text-center my-2 p-0">
+                    <Image width={30} height={30} src={jwt}></Image>
+                  </div>
+                  <div className="col-lg-3 text-center my-2 p-0">
+                    <Image width={30} height={30} src={sql}></Image>
+                  </div>
+                  <div className="col-lg-3 text-center my-2 p-0">
+                    <Image width={30} height={30} src={postgre}></Image>
+                  </div>
+                  {/* <div className="col-lg-4 text-center my-2 p-0">
+                    <Image width={30} height={30} src={mongo}></Image>
+                    <small className="mt-1 d-block">Mongo DB</small>
+                  </div> */}
                 </div>
               </div>
             </div>
