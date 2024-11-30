@@ -1,5 +1,5 @@
 import Image from "next/image";
-import topImg from "../../asstes/images/my-images/top.png";
+import topImg from "../../asstes/images/my-images/top1.jpg";
 import styles from "./MainPage.module.css";
 import profile from "../../asstes/images/my-images/about.jpg";
 import medal from "@/asstes/images/medal.svg";
