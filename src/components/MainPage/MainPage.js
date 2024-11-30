@@ -104,7 +104,7 @@ const MainPage = () => {
             </div>
             <div className="row d-flex justify-content-around h-100 align-items-start">
               <div className="col-lg-6">
-                <div className="card px-5 mt-3">
+                <div className="card mt-3">
                   <div className="card-body text-center">
                     <Image src={medal} height={32} width={32} />
                     <h3>Experience</h3>
@@ -113,7 +113,7 @@ const MainPage = () => {
                 </div>
               </div>
               <div className="col-lg-6 mt-3">
-                <div className="card px-5">
+                <div className="card">
                   <div className="card-body text-center">
                     <Image src={medal} height={32} width={32} />
                     <h3>Education</h3>
@@ -136,7 +136,7 @@ const MainPage = () => {
           </div>
           <div className="col-lg-12 my-5">
             <div className="row justify-content-around">
-              <div className="col-lg-5 mt-3">
+              <div className="col-lg-5 mt-3 d-flex flex-column justify-content-around">
                 <h1 className="text-center">Front-End</h1>
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
                   <div className="text-center col-3 my-2 p-0">
@@ -177,19 +177,19 @@ const MainPage = () => {
                   <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={turbopack}></Image>
                   </div>
-                  <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={sync}></Image>
+                  <div className="col-3 text-center my-2 p-0">
+                    <Image width={30} height={30} src={pwa}></Image>
                   </div>
                 </div>
                 
-                <div className="row m-1 px-2 py-2 d-flex">
+                {/* <div className="row m-1 px-2 py-2 d-flex">
                   <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={data}></Image>
                   </div>
                   <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={pwa}></Image>
                   </div>
-                </div>
+                </div> */}
 
                
               </div>
