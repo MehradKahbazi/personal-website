@@ -2,7 +2,7 @@
   background-image: url(../../asstes/images/foot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 295px;
+  min-height: 295px;
 }
 
 .link{
