@@ -139,54 +139,54 @@ const MainPage = () => {
               <div className="col-lg-5 mt-3">
                 <h1 className="text-center">Front-End</h1>
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={html}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={css}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={scss}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={js}></Image>
                   </div>
                 </div>
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
-                <div className="text-center col-lg-3 my-2 p-0">
+                <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={typescript}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={react}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={next}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={bootstrap}></Image>
                   </div>
                 </div>
                 
                 <div className="row m-1 px-2 py-2 d-flex justify-content-around">
-                <div className="text-center col-lg-3 my-2 p-0">
+                <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={tailwind}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={webpack}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={turbopack}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={sync}></Image>
                   </div>
                 </div>
                 
                 <div className="row m-1 px-2 py-2 d-flex">
-                  <div className="col-lg-3 text-center my-2 p-0">
+                  <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={data}></Image>
                   </div>
-                  <div className="col-lg-3 text-center my-2 p-0">
+                  <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={pwa}></Image>
                   </div>
                 </div>
@@ -196,61 +196,61 @@ const MainPage = () => {
               <div className="col-lg-5 mt-3">
                 <h1 className="text-center">Back-End</h1>
                 <div className="row m-1 px-0 py-2 justify-content-around">
-                  <div className="text-center col-lg-3 p-0 my-2">
+                  <div className="text-center col-3 p-0 my-2">
                     <Image width={30} height={30} src={nodejs}></Image>
                   </div>
-                  <div className="text-center col-lg-3 p-0 my-2">
+                  <div className="text-center col-3 p-0 my-2">
                     <Image width={30} height={30} src={express}></Image>
                   </div>
-                  <div className="text-center col-lg-3 p-0 my-2">
+                  <div className="text-center col-3 p-0 my-2">
                     <Image width={30} height={30} src={nest}></Image>
                   </div>
-                  <div className="text-center col-lg-3 p-0 my-2">
+                  <div className="text-center col-3 p-0 my-2">
                     <Image width={30} height={30} src={solid}></Image>
                   </div>
                 </div>
                 <div className="row m-1 px-0 py-2 justify-content-around">
-                  <div className="text-center col-lg-3 mt-2">
+                  <div className="text-center col-3 mt-2">
                     <Image width={30} height={30} src={oop}></Image>
                     <small className="mt-1 d-block">OOP</small>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={typeorm}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={prisma}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={npm}></Image>
                   </div>
                 </div>
 
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={pnpm}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={yarn}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={nvm}></Image>
                   </div>
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={rest}></Image>
                   </div>
                 </div>
 
                 <div className="row m-1 px-0 py-2 d-flex">
-                  <div className="text-center col-lg-3 my-2 p-0">
+                  <div className="text-center col-3 my-2 p-0">
                     <Image width={30} height={30} src={graphql}></Image>
                   </div>
-                  <div className="col-lg-3 text-center my-2 p-0">
+                  <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={jwt}></Image>
                   </div>
-                  <div className="col-lg-3 text-center my-2 p-0">
+                  <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={sql}></Image>
                   </div>
-                  <div className="col-lg-3 text-center my-2 p-0">
+                  <div className="col-3 text-center my-2 p-0">
                     <Image width={30} height={30} src={postgre}></Image>
                   </div>
                   {/* <div className="col-lg-4 text-center my-2 p-0">
