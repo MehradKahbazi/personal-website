@@ -1,6 +1,22 @@
-.footer{
-    background-image: url(../../asstes/images/foot.jpg);
+.footer {
+  background-image: url(../../asstes/images/foot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 295px;
+}
+
+.link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media screen and (max-width:750px) {
+  .footer {
+    background-image: url(../../asstes/images/foot-m.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 295px;
+    max-height: 295px;
+  }
 }

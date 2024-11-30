@@ -7,26 +7,26 @@ const Footer = () => {
             <footer className={`container-fluid ${styles.footer}`}>
             
             <section className="row h-100 align-items-center justify-content-center" >
-                <div className="col-lg-6 d-flex flex-column justify-content-center h-100 border-end">
-                    <h1 className="text-center text-light">Mehrad Kahbazi</h1>
+                <div className="col-lg-6 d-flex flex-column justify-content-center h-100 ">
+                    <h1 className="text-center text-light py-3">Mehrad Kahbazi</h1>
                     <p className="text-center d-block text-light">Front-End Developer</p>
                 </div>
-                <div className="col-lg-6 h-100  p-5">
+                <div className="col-lg-6 h-100 border-start px-5 pb-3">
                     <h2 className="text-light">Links</h2>
-                    {/* <ul className="p-0">
+                    <ul className="p-0">
                         <li className="list-group-item my-3">
-                            <Link className="btn btn-outline-dark" href='#'>Portfoli</Link>
+                            <Link className={styles.link} href='#'>Portfoli</Link>
                         </li>
                         <li className="list-group-item my-3">
-                            <Link className="btn btn-outline-dark" href='#'>My Experiende</Link>
+                            <Link className={styles.link} href='#'>My Experiende</Link>
                         </li>
                         <li className="list-group-item my-3">
-                            <Link className="btn btn-outline-dark" href='#'>Achievments</Link>
+                            <Link className={styles.link} href='#'>Achievments</Link>
                         </li>
-                        <li className="list-group-item my-3">
+                        {/* <li className="list-group-item my-3">
                             <Link className="btn btn-outline-dark" href='#'>Contact</Link>
-                        </li>
-                    </ul> */}
+                        </li> */}
+                    </ul>
                 </div>
                 
             </section>
