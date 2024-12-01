@@ -133,7 +133,7 @@ const MainPage = () => {
             </h2>
           </div>
           <div className="col-lg-12 ">
-            <div className="row justify-content-around my-5">
+            <div className="row justify-content-around mb-5">
               <div className="col-lg-5 mt-5 d-flex flex-column justify-content-around">
                 <h1 className="text-center">Front-End</h1>
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
