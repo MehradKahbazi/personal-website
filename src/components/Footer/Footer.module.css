@@ -63,7 +63,8 @@
     width: 60%;
   }
   .glass{
-    border-radius: 5px;
-    background-color: #3b3a3aa8;
+    /* border-radius: 5px;
+    background-color: #3b3a3aa8; */
+    opacity: 0;
   }
 }

@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className={`col-lg-6 h-100 ${styles.myborder} px-5 pt-0 d-flex flex-column justify-content-center`}>
                     <h2 className="text-light">Links</h2>
-                    <ul className="p-0">
+                    <ul className="p-0 ps-3">
                         <li className={`list-group-item my-3 ${styles.navItem}`}>
                             <Link className={styles.link} href='#'>Portfoli</Link>
                         </li>
