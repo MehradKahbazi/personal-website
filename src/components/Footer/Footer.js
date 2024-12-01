@@ -7,20 +7,22 @@ const Footer = () => {
             <footer className={`container-fluid ${styles.footer}`}>
             
             <section className="row h-100 align-items-center justify-content-center" >
-                <div className="col-lg-6 d-flex flex-column justify-content-center h-100 ">
-                    <h1 className="text-center text-light py-3">Mehrad Kahbazi</h1>
+                <div className="col-lg-6 h-100 d-flex justify-content-center">
+                    <div className={`d-flex flex-column justify-content-center my-3 py-2 ${styles.width} ${styles.glass}`}>
+                    <h1 className="text-center text-light">Mehrad Kahbazi</h1>
                     <p className="text-center d-block text-light">Front-End Developer</p>
+                    </div>
                 </div>
-                <div className="col-lg-6 h-100 border-start px-5 pb-3">
+                <div className={`col-lg-6 h-100 ${styles.myborder} px-5 pt-0 d-flex flex-column justify-content-center`}>
                     <h2 className="text-light">Links</h2>
                     <ul className="p-0">
-                        <li className="list-group-item my-3">
+                        <li className={`list-group-item my-3 ${styles.navItem}`}>
                             <Link className={styles.link} href='#'>Portfoli</Link>
                         </li>
-                        <li className="list-group-item my-3">
-                            <Link className={styles.link} href='#'>My Experiende</Link>
+                        <li className={`list-group-item my-3 ${styles.navItem}`}>
+                            <Link className={styles.link} href='#'>My Experience</Link>
                         </li>
-                        <li className="list-group-item my-3">
+                        <li className={`list-group-item my-3 ${styles.navItem}`}>
                             <Link className={styles.link} href='#'>Achievments</Link>
                         </li>
                         {/* <li className="list-group-item my-3">

@@ -2,21 +2,68 @@
   background-image: url(../../asstes/images/foot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 295px;
+  height: 295px;
+}
+.navItem {
+  position: relative;
+  width: 20%;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.link{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 300;
+.link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  left: 0;
 }
 
-@media screen and (max-width:750px) {
+.link:hover:after {
+  width: 100%;
+  /* left: 0;  */
+}
+
+.myborder {
+  border-left: 1px solid #fff;
+  padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 750px) {
   .footer {
     background-image: url(../../asstes/images/foot-m.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 295px;
+    height: auto;
+  }
+  .myborder {
+    border-left: none;
+  }
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .navItem {
+    width: 40%;
+  }
+
+  .width {
+    width: 60%;
+  }
+  .glass{
+    border-radius: 5px;
+    background-color: #3b3a3ac9;
   }
 }
