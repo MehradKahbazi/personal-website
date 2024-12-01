@@ -15,8 +15,6 @@ import next from "@/asstes/images/next_icon.svg";
 import webpack from "@/asstes/images/webpack_icon.svg";
 import turbopack from "@/asstes/images/turbopack_icon.svg";
 import pwa from "@/asstes/images/pwa_icon.svg";
-import sync from "@/asstes/images/sync_icon.svg";
-import data from "@/asstes/images/data_icon.svg";
 import scss from "@/asstes/images/scss_icon.svg";
 import typescript from "@/asstes/images/typescript_icon.svg";
 import nodejs from "@/asstes/images/nodejs_icon.svg";
@@ -80,7 +78,7 @@ const MainPage = () => {
       <div className="container my-3">
         {/* about section start */}
         <section className={`row align-items-center ${styles.height}`}>
-          <div className="col-lg-12 text-center">
+          <div className="col-lg-12 text-center my-5">
             <small className="text-secondary">Get to Know More</small>
             <h2 className={styles.divider}>
               <span>About Me</span>
@@ -127,58 +125,58 @@ const MainPage = () => {
         {/* about section end */}
 
         {/* skills section start */}
-        <section className={`row ${styles.height} my-3`}>
-          <div className="col-lg-12 text-center">
+        <section className={`row ${styles.height}`}>
+          <div className="col-lg-12 text-center mt-5">
             <small className="text-secondary">Here's My</small>
             <h2 className={styles.divider}>
               <span>Skills</span>
             </h2>
           </div>
-          <div className="col-lg-12 my-5">
-            <div className="row justify-content-around">
-              <div className="col-lg-5 mt-3 d-flex flex-column justify-content-around">
+          <div className="col-lg-12 ">
+            <div className="row justify-content-around my-5">
+              <div className="col-lg-5 mt-5 d-flex flex-column justify-content-around">
                 <h1 className="text-center">Front-End</h1>
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
-                  <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={html}></Image>
+                  <div className="text-center col-3 my-2 p-0 ">
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={html}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={css}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={css}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={scss}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={scss}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={js}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={js}></Image>
                   </div>
                 </div>
                 <div className="row m-1 px-0 py-2 d-flex justify-content-around">
                 <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={typescript}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={typescript}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={react}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={react}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={next}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={next}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={bootstrap}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={bootstrap}></Image>
                   </div>
                 </div>
                 
                 <div className="row m-1 px-2 py-2 d-flex justify-content-around">
                 <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={tailwind}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={tailwind}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={webpack}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={webpack}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={turbopack}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={turbopack}></Image>
                   </div>
                   <div className="col-3 text-center my-2 p-0">
-                    <Image width={30} height={30} src={pwa}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={pwa}></Image>
                   </div>
                 </div>
                 
@@ -193,65 +191,64 @@ const MainPage = () => {
 
                
               </div>
-              <div className="col-lg-5 mt-3">
+              <div className="col-lg-5 mt-5">
                 <h1 className="text-center">Back-End</h1>
                 <div className="row m-1 px-0 py-2 justify-content-around">
                   <div className="text-center col-3 p-0 my-2">
-                    <Image width={30} height={30} src={nodejs}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={nodejs}></Image>
                   </div>
                   <div className="text-center col-3 p-0 my-2">
-                    <Image width={30} height={30} src={express}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={express}></Image>
                   </div>
                   <div className="text-center col-3 p-0 my-2">
-                    <Image width={30} height={30} src={nest}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={nest}></Image>
                   </div>
-                  <div className="text-center col-3 p-0 my-2">
-                    <Image width={30} height={30} src={solid}></Image>
+                  <div className="text-center col-3 my-2 p-0">
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={rest}></Image>
                   </div>
                 </div>
                 <div className="row m-1 px-0 py-2 justify-content-around">
                   <div className="text-center col-3 mt-2">
-                    <Image width={30} height={30} src={oop}></Image>
-                    <small className="mt-1 d-block">OOP</small>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={oop}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={typeorm}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={typeorm}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={prisma}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={prisma}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={npm}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={npm}></Image>
                   </div>
                 </div>
 
-                <div className="row m-1 px-0 py-2 d-flex justify-content-around">
+                {/* <div className="row m-1 px-0 py-2 d-flex justify-content-around">
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={pnpm}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={pnpm}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={yarn}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={yarn}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={nvm}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={nvm}></Image>
                   </div>
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={rest}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={rest}></Image>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="row m-1 px-0 py-2 d-flex">
                   <div className="text-center col-3 my-2 p-0">
-                    <Image width={30} height={30} src={graphql}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={graphql}></Image>
                   </div>
                   <div className="col-3 text-center my-2 p-0">
-                    <Image width={30} height={30} src={jwt}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={jwt}></Image>
                   </div>
                   <div className="col-3 text-center my-2 p-0">
-                    <Image width={30} height={30} src={sql}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={sql}></Image>
                   </div>
                   <div className="col-3 text-center my-2 p-0">
-                    <Image width={30} height={30} src={postgre}></Image>
+                    <Image className="shadow rounded-circle p-1" width={60} height={60} src={postgre}></Image>
                   </div>
                   {/* <div className="col-lg-4 text-center my-2 p-0">
                     <Image width={30} height={30} src={mongo}></Image>
