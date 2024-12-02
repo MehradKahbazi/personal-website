@@ -34,6 +34,7 @@ import postgre from "@/asstes/images/postgre_icon.svg";
 import mongo from "@/asstes/images/mongodb_icon.svg";
 import solid from "@/asstes/images/solid_icon.png";
 import oop from "@/asstes/images/oop_icon.svg";
+import Link from "next/link";
 const MainPage = () => {
   return (
     <>
@@ -59,16 +60,17 @@ const MainPage = () => {
                 >
                   Contact Me
                 </a>
-                <a
-                  href="#"
+                <Link
+                  href={'/files/Mehrad Kahbazi.pdf'}
                   className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}
+                   rel="noopener noreferrer" locale={false} download
                 >
                   Download Resume
-                </a>
+                </Link>
               </div>
               <div className="d-flex justify-content-center align-items-center w-50 gap-3 pt-3">
-                <Image src={linkedin} height={32} width={32} />
-                <Image src={github} height={32} width={32} />
+                <a href="https://www.linkedin.com/in/mehrad-kahbazi-089762180/" target="_blank"><Image src={linkedin} height={32} width={32} /></a>
+                <a href="https://github.com/MehradKahbazi/" target="_blank"><Image src={github} height={32} width={32} /></a>
               </div>
             </div>
           </section>
