@@ -40,13 +40,13 @@ const MainPage = () => {
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
         {/* top section start */}
         <div className={`container ${styles.top}`}>
-          <section className="row justify-content-center">
+          <section className="row justify-content-center align-items-center">
             <div className="col-lg-6">
               <Image
                 src={topImg}
                 alt="header photo"
                 quality={100}
-                className="img-fluid w-100"
+                className="img-fluid w-100 rounded"
               />
             </div>
             <div className="col-lg-5 d-flex flex-column align-items-center h-100 my-4">
@@ -127,7 +127,7 @@ const MainPage = () => {
         {/* skills section start */}
         <section className={`row ${styles.height}`}>
           <div className="col-lg-12 text-center mt-5">
-            <small className="text-secondary">Here's My</small>
+            <small className="text-secondary">Here are My</small>
             <h2 className={styles.divider}>
               <span>Skills</span>
             </h2>
