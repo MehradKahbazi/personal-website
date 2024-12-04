@@ -91,7 +91,7 @@ const MainPage = () => {
           </div>
           <div className="col-lg-8 ">
             <div className="about">
-              <p className="p-5">
+              <p className={`p-5 ${styles.mp}`}>
                 Creative and detail-oriented Front-End Developer with over 4
                 years of experience building responsive, user-friendly websites.
                 Skilled in modern frameworks like React and Next.js. Solid

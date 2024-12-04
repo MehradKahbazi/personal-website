@@ -85,3 +85,10 @@
 .inside{
   list-style-position: inside;
 }
+
+@media screen and (max-width: 750px) {
+  .mp{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
