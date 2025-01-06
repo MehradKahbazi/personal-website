@@ -110,6 +110,7 @@ const MainPage = () => {
                 collaboration. Experienced in Agile environments, translating
                 designs into high-quality, optimized code while staying
                 up-to-date with industry trends and best practices.
+                {user && user}
               </p>
             </div>
             <div className="row d-flex justify-content-around h-100 align-items-start">
