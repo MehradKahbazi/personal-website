@@ -43,7 +43,7 @@ const MainPage = () => {
   const [user, setUser] = useState(null)
   useEffect(() =>{
     const userName = document.referrer
-    console.log(userName);
+    setUser(userName);
   }, [])
   return (
     <>
