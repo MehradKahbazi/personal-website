@@ -35,7 +35,15 @@ import mongo from "@/asstes/images/mongodb_icon.svg";
 import solid from "@/asstes/images/solid_icon.png";
 import oop from "@/asstes/images/oop_icon.svg";
 import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import AppState from "@/contexts/AppState";
 const MainPage = () => {
+
+  const {setCollapsed} = useContext(AppState);
+  const [user, setUser] = useState(null)
+  useEffect(() =>{
+    const userName = window.history.previous.href
+  }, [])
   return (
     <>
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
@@ -57,8 +65,9 @@ const MainPage = () => {
                 <a
                   href="#"
                   className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}
+                  onClick={() => {setCollapsed(prevState => !prevState)}}
                 >
-                  Contact Me
+                  {user && user}
                 </a>
                 <Link
                   href={'/files/Mehrad Kahbazi.pdf'}
