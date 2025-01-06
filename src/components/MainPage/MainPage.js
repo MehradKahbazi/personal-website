@@ -42,7 +42,8 @@ const MainPage = () => {
   const {setCollapsed} = useContext(AppState);
   const [user, setUser] = useState(null)
   useEffect(() =>{
-    const userName = window.history.previous.href
+    const userName = document.referrer
+    console.log(userName);
   }, [])
   return (
     <>
