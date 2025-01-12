@@ -35,16 +35,11 @@ import mongo from "@/asstes/images/mongodb_icon.svg";
 import solid from "@/asstes/images/solid_icon.png";
 import oop from "@/asstes/images/oop_icon.svg";
 import Link from "next/link";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import AppState from "@/contexts/AppState";
 const MainPage = () => {
 
   const {setCollapsed} = useContext(AppState);
-  const [user, setUser] = useState(null)
-  useEffect(() =>{
-    const userName = document.referrer
-    setUser(userName);
-  }, [])
   return (
     <>
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
@@ -68,7 +63,7 @@ const MainPage = () => {
                   className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}
                   onClick={() => {setCollapsed(prevState => !prevState)}}
                 >
-                  {user && user}
+                  Contact Me
                 </a>
                 <Link
                   href={'/files/Mehrad Kahbazi.pdf'}
@@ -110,7 +105,6 @@ const MainPage = () => {
                 collaboration. Experienced in Agile environments, translating
                 designs into high-quality, optimized code while staying
                 up-to-date with industry trends and best practices.
-                {user && user}
               </p>
             </div>
             <div className="row d-flex justify-content-around h-100 align-items-start">
