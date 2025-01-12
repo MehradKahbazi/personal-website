@@ -8,7 +8,7 @@ const Layout = (props) => {
   return (
     <>
       <Menu />
-      <CustomModal />
+      {/* <CustomModal /> */}
       <div className={GeistSans.className}>{props.children}</div>
       <Footer />
     </>

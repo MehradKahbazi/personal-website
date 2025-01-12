@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styles from "./CustomModal.module.css";
 import AppState from "@/contexts/AppState";
 import hands from "@/asstes/images/my-images/IMG_0387.jpg";
@@ -10,25 +10,48 @@ import email from "@/asstes/images/email_b.svg";
 const CustomModal = () => {
   const { collapsed, setCollapsed } = useContext(AppState);
 
+  useEffect(() => {
+    if (collapsed) {
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => (document.body.style.overflow = "unset");
+  }, []);
+
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
-      <div className="container">
-        <div className="row vh-100 align-items-center justify-content-center">
-          <div className="col-lg-6 rounded bg-white position-relative">
-            <a
-              href="#"
-              className="btn-close position-absolute end-0 m-3"
-              disabled
-              aria-label="Close"
-              onClick={() => {
-                setCollapsed((prevState) => !prevState);
-              }}
-            ></a>
-            <div className="row">
-              <div className="col-lg-6 p-4 ">
-                <Image src={hands} className="img-fluid rounded-2" />
+      <div className={`container-fluid ${styles.modalDialog}`}>
+        <div className="row  justify-content-center rounded bg-white py-3">
+          <div className="col-lg-12 d-flex d-lg-none justify-content-end">
+            
+              <a
+                href="#"
+                className="btn-close mb-2"
+                disabled
+                aria-label="Close"
+                onClick={() => {
+                  setCollapsed((prevState) => !prevState);
+                }}
+              ></a>
+            
+          </div>
+          <div className="col-lg-7">
+            <Image src={hands} className="img-fluid rounded-2" />
+          </div>
+          <div className="col-lg-5">
+            <div className="row h-100">
+              <div className={`col-lg-12 d-flex justify-content-end ${styles.close}`}>
+              <a
+                href="#"
+                className="btn-close  m-3"
+                disabled
+                aria-label="Close"
+                onClick={() => {
+                  setCollapsed((prevState) => !prevState);
+                }}
+              ></a>
               </div>
-              <div className="col-lg-6 d-flex flex-column justify-content-around pt-4 pb-3">
+              <div className="col-lg-12 h-100 d-flex flex-column justify-content-around pt-4 pb-3">
                 <p>
                   Bootstrap “spinners” can be used to show the loading state in
                   your projects. They’re built only with HTML and CSS, meaning
@@ -37,30 +60,49 @@ const CustomModal = () => {
                   visibility.
                 </p>
                 <div className="d-flex flex-column justify-content-start">
-                <a className={styles.link} href="mailto:mehradhetfield@gmail.com">
-                <Image src={email} className="me-2" height={17} width={17} />
-                  mehradhetfield@gmail.com
-                </a>
-                <a
-                  className={styles.link}
-                  href="https://www.linkedin.com/in/mehrad-kahbazi-089762180/"
-                  target="_blank"
-                >
-                    <Image src={linkedin} className="me-2" height={17} width={17} />
-                  Linkedin
-                </a>
-                <a
-                  className={styles.link}
-                  href="https://github.com/MehradKahbazi/"
-                  target="_blank"
-                >
-                    <Image src={github} className="me-2" height={17} width={17} />
-                  Github
-                </a>
+                  <a
+                    className={styles.link}
+                    href="mailto:mehradhetfield@gmail.com"
+                  >
+                    <Image
+                      src={email}
+                      className="me-2"
+                      height={17}
+                      width={17}
+                    />
+                    mehradhetfield@gmail.com
+                  </a>
+                  <a
+                    className={styles.link}
+                    href="https://www.linkedin.com/in/mehrad-kahbazi-089762180/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={linkedin}
+                      className="me-2"
+                      height={17}
+                      width={17}
+                    />
+                    Linkedin
+                  </a>
+                  <a
+                    className={styles.link}
+                    href="https://github.com/MehradKahbazi/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={github}
+                      className="me-2"
+                      height={17}
+                      width={17}
+                    />
+                    Github
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

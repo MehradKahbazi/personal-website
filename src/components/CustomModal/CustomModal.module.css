@@ -28,8 +28,26 @@
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
     height: 100vh;
     width: 100%;
-    /* top: 0; */
+    top: 0;
     opacity: 1;
+    display: flex;
+    align-items: center;
     /* transition: all 600ms linear; */
   }
   
+  .modalDialog{
+    width: 50% !important;
+  }
+
+  @media screen and (max-width: 760px)  {
+    .modalDialog{
+      width: 90% !important;
+    }
+    .close{
+      display: none !important;
+    }
+  }
+
+  /* .close{
+    display: flex;
+  } */

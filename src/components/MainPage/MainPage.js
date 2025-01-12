@@ -37,9 +37,11 @@ import oop from "@/asstes/images/oop_icon.svg";
 import Link from "next/link";
 import { useContext } from "react";
 import AppState from "@/contexts/AppState";
+import Portal from "../Portal/Portal";
+import CustomModal from "../CustomModal/CustomModal";
 const MainPage = () => {
 
-  const {setCollapsed} = useContext(AppState);
+  const {collapsed, setCollapsed} = useContext(AppState);
   return (
     <>
       <div className={`container-fluid m-0 p-0 ${styles.background} py-5`}>
@@ -313,6 +315,9 @@ const MainPage = () => {
 
         {/* portfolio section end */}
       </div>
+      {collapsed && <Portal>
+        <CustomModal />
+      </Portal>}
     </>
   );
 };
