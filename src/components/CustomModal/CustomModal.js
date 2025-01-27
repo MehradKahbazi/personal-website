@@ -20,7 +20,7 @@ const CustomModal = () => {
 
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
-      <div className={`container-fluid ${styles.modalDialog}`}>
+      <div className={`container-fluid ${styles.modalDialog} py-3`}>
         <div className={`row justify-content-center rounded bg-white py-3 overflow-y-auto h-100`}>
           <div className="col-lg-12 d-flex d-lg-none justify-content-end">
             
