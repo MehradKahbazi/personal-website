@@ -39,7 +39,7 @@
     width: 50% !important;
   }
   .overflow{
-    overflow-y: auto;
+    overflow-y: auto !important;
   }
 
   @media screen and (max-width: 760px)  {
@@ -50,7 +50,7 @@
       display: none !important;
     }
     .overflow{
-      overflow-y: auto;
+      overflow-y: auto !important;
     }
   }
 
