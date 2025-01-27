@@ -21,7 +21,7 @@ const CustomModal = () => {
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
       <div className={`container-fluid ${styles.modalDialog}`}>
-        <div className="row  justify-content-center rounded bg-white py-3">
+        <div className={`row justify-content-center rounded bg-white py-3 ${styles.overflow}`}>
           <div className="col-lg-12 d-flex d-lg-none justify-content-end">
             
               <a
@@ -40,7 +40,7 @@ const CustomModal = () => {
           </div>
           <div className="col-lg-5">
             <div className="row h-100">
-              <div className={`col-lg-12 d-flex justify-content-end ${styles.close}`}>
+              <div className={`col-lg-12 d-none d-lg-flex justify-content-end ${styles.close}`}>
               <a
                 href="#"
                 className="btn-close  m-3"

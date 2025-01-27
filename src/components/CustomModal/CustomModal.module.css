@@ -38,6 +38,9 @@
   .modalDialog{
     width: 50% !important;
   }
+  .overflow{
+    overflow-y: auto;
+  }
 
   @media screen and (max-width: 760px)  {
     .modalDialog{
@@ -45,6 +48,9 @@
     }
     .close{
       display: none !important;
+    }
+    .overflow{
+      overflow-y: auto;
     }
   }
 
