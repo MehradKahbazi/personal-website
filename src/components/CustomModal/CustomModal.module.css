@@ -60,7 +60,7 @@
       overflow-y: auto !important;
     }
     .modalDialog{
-      height: 96%;
+      height: 96% !important;
     }
   }
 
