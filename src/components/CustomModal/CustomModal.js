@@ -20,8 +20,8 @@ const CustomModal = () => {
 
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
-      <div className={`container-fluid ${styles.modalDialog} py-3`}>
-        <div className={`row justify-content-center rounded bg-white overflow-y-auto h-100`}>
+      <div className={`container-fluid ${styles.modalDialog}`}>
+        <div className={`row justify-content-center rounded bg-white py-3 overflow-y-auto h-100`}>
           <div className="col-lg-12 d-flex d-lg-none justify-content-end">
             
               <a
@@ -39,7 +39,7 @@ const CustomModal = () => {
             <Image src={hands} className="img-fluid rounded-2" />
           </div>
           <div className="col-lg-5">
-            <div className="row ">
+            <div className="row h-100">
               <div className={`col-lg-12 d-none d-lg-flex justify-content-end ${styles.close}`}>
               <a
                 href="#"
@@ -51,10 +51,10 @@ const CustomModal = () => {
                 }}
               ></a>
               </div>
-              <div className="col-lg-12 d-flex flex-column justify-content-around pt-4 pb-3">
+              <div className="col-lg-12 h-100 d-flex flex-column justify-content-around pt-4 pb-3">
                 <div className="row">
                   <div className="col-12">
-                  <p>
+                    <p>
                   Bootstrap “spinners” can be used to show the loading state in
                   your projects. They’re built only with HTML and CSS, meaning
                   you don’t need any JavaScript to create them. You will,
@@ -88,45 +88,6 @@ const CustomModal = () => {
                       width={17}
                     />
                     Linkedin
-                  </a>
-                  <a
-                    className={styles.link}
-                    href="https://github.com/MehradKahbazi/"
-                    target="_blank"
-                  >
-                    <Image
-                      src={github}
-                      className="me-2"
-                      height={17}
-                      width={17}
-                    />
-                    Github
-                  </a>
-                  <a
-                    className={styles.link}
-                    href="https://github.com/MehradKahbazi/"
-                    target="_blank"
-                  >
-                    <Image
-                      src={github}
-                      className="me-2"
-                      height={17}
-                      width={17}
-                    />
-                    Github
-                  </a>
-                  <a
-                    className={styles.link}
-                    href="https://github.com/MehradKahbazi/"
-                    target="_blank"
-                  >
-                    <Image
-                      src={github}
-                      className="me-2"
-                      height={17}
-                      width={17}
-                    />
-                    Github
                   </a>
                   <a
                     className={styles.link}
