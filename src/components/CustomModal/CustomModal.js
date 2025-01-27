@@ -102,6 +102,45 @@ const CustomModal = () => {
                     />
                     Github
                   </a>
+                  <a
+                    className={styles.link}
+                    href="https://github.com/MehradKahbazi/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={github}
+                      className="me-2"
+                      height={17}
+                      width={17}
+                    />
+                    Github
+                  </a>
+                  <a
+                    className={styles.link}
+                    href="https://github.com/MehradKahbazi/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={github}
+                      className="me-2"
+                      height={17}
+                      width={17}
+                    />
+                    Github
+                  </a>
+                  <a
+                    className={styles.link}
+                    href="https://github.com/MehradKahbazi/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={github}
+                      className="me-2"
+                      height={17}
+                      width={17}
+                    />
+                    Github
+                  </a>
                 </div>
               </div>
             </div>
