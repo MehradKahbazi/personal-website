@@ -21,7 +21,7 @@ const CustomModal = () => {
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
       <div className={`container-fluid ${styles.modalDialog}`}>
-        <div className={`row justify-content-center rounded bg-white py-3 ${styles.overflow}`}>
+        <div className={`row justify-content-center rounded bg-white py-3 overflow-y-auto h-100`}>
           <div className="col-lg-12 d-flex d-lg-none justify-content-end">
             
               <a
@@ -39,7 +39,7 @@ const CustomModal = () => {
             <Image src={hands} className="img-fluid rounded-2" />
           </div>
           <div className="col-lg-5">
-            <div className="row h-100">
+            <div className="row ">
               <div className={`col-lg-12 d-none d-lg-flex justify-content-end ${styles.close}`}>
               <a
                 href="#"
@@ -51,14 +51,18 @@ const CustomModal = () => {
                 }}
               ></a>
               </div>
-              <div className="col-lg-12 h-100 d-flex flex-column justify-content-around pt-4 pb-3">
-                <p>
+              <div className="col-lg-12 d-flex flex-column justify-content-around pt-4 pb-3">
+                <div className="row">
+                  <div className="col-12">
+                  <p>
                   Bootstrap “spinners” can be used to show the loading state in
                   your projects. They’re built only with HTML and CSS, meaning
                   you don’t need any JavaScript to create them. You will,
                   however, need some custom JavaScript to toggle their
                   visibility.
                 </p>
+                  </div>
+                </div>
                 <div className="d-flex flex-column justify-content-start">
                   <a
                     className={styles.link}
