@@ -20,8 +20,9 @@ const CustomModal = () => {
 
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
+    {/* <div class="modal-dialog modal-dialog-scrollable"> */}
       <div className={`container-fluid ${styles.modalDialog}`}>
-        <div className={`row justify-content-center rounded bg-white py-3 overflow-y-auto h-100`}>
+        <div className={`row justify-content-center rounded bg-white py-3 my-3 overflow-y-auto h-100`}>
           <div className="col-lg-12 d-flex d-lg-none justify-content-end">
             
               <a
@@ -36,7 +37,7 @@ const CustomModal = () => {
             
           </div>
           <div className="col-lg-7">
-            <Image src={hands} className="img-fluid rounded-2" />
+            <Image src={hands}  className="img-fluid rounded-2" />
           </div>
           <div className="col-lg-5">
             <div className="row h-100">
