@@ -20,44 +20,52 @@ const CustomModal = () => {
 
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
-    {/* <div class="modal-dialog modal-dialog-scrollable"> */}
+      {/* <div class="modal-dialog modal-dialog-scrollable"> */}
       <div className={`container-fluid ${styles.modalDialog}`}>
-        <div className={`row justify-content-center rounded bg-white py-3 my-3 overflow-y-auto h-100`}>
+        <div
+          className={`row justify-content-center rounded bg-white py-3 my-3 overflow-y-auto h-100`}
+        >
           <div className="col-lg-12 d-flex d-lg-none justify-content-end">
-            
-              <a
-                href="#"
-                className="btn-close mb-2"
-                disabled
-                aria-label="Close"
-                onClick={() => {
-                  setCollapsed((prevState) => !prevState);
-                }}
-              ></a>
-            
+            <a
+              href="#"
+              className="btn-close mb-2"
+              disabled
+              aria-label="Close"
+              onClick={() => {
+                setCollapsed((prevState) => !prevState);
+              }}
+            ></a>
           </div>
           <div className="col-lg-7">
-            <Image src={hands}  className="img-fluid rounded-2" />
+            <Image src={hands} className="img-fluid rounded-2" />
           </div>
           <div className="col-lg-5">
             <div className="row h-100">
-              <div className={`col-lg-12 d-none d-lg-block position-relative ${styles.close}`} style={{height:'10%'}}>
-              <a
-                href="#"
-                className="btn-close position-absolute end-0 m-3"
-                disabled
-                aria-label="Close"
-                onClick={() => {
-                  setCollapsed((prevState) => !prevState);
-                }}
-              ></a>
+              <div
+                className={`col-lg-12 d-none d-lg-block position-relative ${styles.close}`}
+                style={{ height: "10%" }}
+              >
+                <a
+                  href="#"
+                  className="btn-close position-absolute end-0 m-3"
+                  disabled
+                  aria-label="Close"
+                  onClick={() => {
+                    setCollapsed((prevState) => !prevState);
+                  }}
+                ></a>
               </div>
-              <div className="col-lg-12 d-flex flex-column justify-content-between pt-4 pb-3" style={{height:'90%'}}>
+              <div
+                className="col-lg-12 d-flex flex-column justify-content-between pt-4 pb-3"
+                style={{ height: "90%" }}
+              >
                 <div className="row">
                   <div className="col-12">
                     <p>
-                  In case of need of consultation or web application services you can contact me via options given below
-                </p>
+                      If you require consultation or web application services,
+                      please feel free to contact me using the options provided
+                      below.
+                    </p>
                   </div>
                 </div>
                 <div className="d-flex flex-column justify-content-start">
@@ -103,7 +111,6 @@ const CustomModal = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
