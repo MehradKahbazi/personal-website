@@ -84,7 +84,7 @@ const MainPage = () => {
         </div>
       </div>
       {/* top section end */}
-      <div className="container my-3">
+      {!collapsed && <div className="container my-3">
         {/* about section start */}
         <section className={`row align-items-center ${styles.height}`}>
           <div className="col-lg-12 text-center my-5">
@@ -314,7 +314,7 @@ const MainPage = () => {
         </section> */}
 
         {/* portfolio section end */}
-      </div>
+      </div>}
       {collapsed && <Portal>
         <CustomModal />
       </Portal>}

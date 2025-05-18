@@ -10,13 +10,13 @@ import email from "@/asstes/images/email_b.svg";
 const CustomModal = () => {
   const { collapsed, setCollapsed } = useContext(AppState);
 
-  useEffect(() => {
-    if (collapsed) {
-      document.body.style.overflow = "hidden";
-    }
+  // useEffect(() => {
+  //   if (collapsed) {
+  //     document.body.style.overflow = "hidden";
+  //   }
 
-    return () => (document.body.style.overflow = "unset");
-  }, []);
+  //   return () => (document.body.style.overflow = "unset");
+  // }, []);
 
   return (
     <div className={collapsed ? styles.collapsed : styles.menu}>
