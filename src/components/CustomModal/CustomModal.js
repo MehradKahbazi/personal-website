@@ -41,10 +41,10 @@ const CustomModal = () => {
           </div>
           <div className="col-lg-5">
             <div className="row h-100">
-              <div className={`col-lg-12 d-none d-lg-flex justify-content-end ${styles.close}`}>
+              <div className={`col-lg-12 d-none d-lg-block position-relative ${styles.close}`} style={{height:'10%'}}>
               <a
                 href="#"
-                className="btn-close  m-3"
+                className="btn-close position-absolute end-0 m-3"
                 disabled
                 aria-label="Close"
                 onClick={() => {
@@ -52,15 +52,11 @@ const CustomModal = () => {
                 }}
               ></a>
               </div>
-              <div className="col-lg-12 h-100 d-flex flex-column justify-content-around pt-4 pb-3">
+              <div className="col-lg-12 d-flex flex-column justify-content-between pt-4 pb-3" style={{height:'90%'}}>
                 <div className="row">
                   <div className="col-12">
                     <p>
-                  Bootstrap “spinners” can be used to show the loading state in
-                  your projects. They’re built only with HTML and CSS, meaning
-                  you don’t need any JavaScript to create them. You will,
-                  however, need some custom JavaScript to toggle their
-                  visibility.
+                  In case of need of consultation or web application services you can contact me via options given below
                 </p>
                   </div>
                 </div>
@@ -75,7 +71,7 @@ const CustomModal = () => {
                       height={17}
                       width={17}
                     />
-                    mehradhetfield@gmail.com
+                    <small>mehradhetfield@gmail.com</small>
                   </a>
                   <a
                     className={styles.link}
@@ -88,7 +84,7 @@ const CustomModal = () => {
                       height={17}
                       width={17}
                     />
-                    Linkedin
+                    <small>Linkedin</small>
                   </a>
                   <a
                     className={styles.link}
@@ -101,7 +97,7 @@ const CustomModal = () => {
                       height={17}
                       width={17}
                     />
-                    Github
+                    <small>Github</small>
                   </a>
                 </div>
               </div>
