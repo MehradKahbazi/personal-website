@@ -68,7 +68,7 @@ const MainPage = () => {
                   Contact Me
                 </a>
                 <Link
-                  href={'/files/Mehrad Kahbazi.pdf'}
+                  href={'/files/Mehrad-Kahbazi.pdf'}
                   className={`border border-black border-2 px-3 py-2 ${styles.customBtn}`}
                    rel="noopener noreferrer" locale={false} download
                 >
